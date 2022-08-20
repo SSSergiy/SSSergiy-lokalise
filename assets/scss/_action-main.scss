@@ -1,0 +1,74 @@
+.main {
+  &__action {
+    background-color: #fff8e4;
+    @include adaptiveValue("padding-top", 110, 15);
+    @include adaptiveValue("padding-bottom", 171, 15);
+    .underline{
+text-decoration: underline;
+    }
+  }
+}
+.action-main {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    @include adaptiveValue("gap", 80, 15);
+  }
+  &__title {
+    font-weight: 600;
+    @include adaptiveValue("font-size", 50, 27);
+    line-height: math.div(60, 50);
+    color: #000000;
+    font-family: graphik;
+    letter-spacing: rem(-0.3);
+  }
+  &__items {
+    width: 100%;
+    display: grid;
+    @include adaptiveValue("column-gap", 30, 20);
+    @include adaptiveValue("row-gap", 70, 20);
+    grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+  }
+  &__item {
+  }
+}
+.item-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  @include adaptiveValue("gap", 20, 10);
+  &__title {
+    order: 2;
+    font-family: graphik;
+    font-weight: 600;
+    font-size: rem(25);
+    line-height: math.div(35, 25);
+    color: #000000;
+    letter-spacing: rem(-1);
+  }
+  &__img {
+    order: 1;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__deskription {
+    order: 2;
+    font-family: graphik;
+    font-size: rem(18);
+    line-height: math.div(23, 18);
+    color: #000000;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include adaptiveValue("padding-left", 23, 1);
+    @include adaptiveValue("padding-right", 24, 1);
+  }
+}

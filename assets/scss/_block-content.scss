@@ -1,0 +1,84 @@
+.main {
+  &__block {
+    @include adaptiveValue("padding-top", 84, 0);
+    @include adaptiveValue("padding-left", 23, 1);
+    @include adaptiveValue("padding-right", 24, 1);
+    @include adaptiveValue("margin-bottom", 165, 0);
+    .underline {
+    text-decoration: underline;
+    cursor: pointer;
+    }
+  }
+}
+.block-content {
+  &__container {
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("gap", 30, 10);
+    @media (max-width: rem(805)) {
+      flex-wrap: wrap;
+    }
+  }
+  &__img-block {
+    flex: 1 1 50%;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__info {
+    &.info {
+      order: 2;
+      @media (max-width: rem(805)) {
+        order: -1;
+      }
+      @include adaptiveValue("padding-left", 110, 1);
+      @include adaptiveValue("padding-right", 30, 1);
+    }
+    display: flex;
+    @include adaptiveValue("gap", 30, 10);
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin: rem(-17) rem(0) rem(0) rem(0);
+    @media (max-width: rem(805)) {
+      margin: rem(0) rem(0) rem(0) rem(0);
+      @include adaptiveValue("padding-top", 40, 15);
+      @include adaptiveValue("padding-bottom", 40, 15);
+    }
+  }
+  &__title {
+    @include adaptiveValue("padding-top", 20, 1);
+    font-family: graphik;
+    font-weight: 600;
+    max-width: rem(493);
+    @media (max-width: rem(805)) {
+      max-width: 100%;
+    }
+    @include adaptiveValue("font-size", 50, 30);
+    line-height: math.div(60, 50);
+    color: #000000;
+    letter-spacing: rem(-0.3);
+    @media (max-width: rem(805)) {
+      text-align: center;
+    }
+  }
+  &__text {
+    font-family: graphik;
+    font-weight: 400;
+    max-width: rem(493);
+    @media (max-width: rem(805)) {
+      max-width: 100%;
+    }
+    @include adaptiveValue("font-size", 20, 15);
+    line-height: math.div(30, 20);
+    color: #000000;
+    letter-spacing: rem(-0.9);
+  }
+  &__sub-title {
+    font-family: graphik;
+    font-weight: 600;
+    @include adaptiveValue("font-size", 20, 15);
+    line-height: math.div(30, 29);
+    color: #000000;
+  }
+}
