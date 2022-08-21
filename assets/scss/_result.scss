@@ -1,8 +1,8 @@
 .main {
   &__result {
     background-color: #ff9c7d;
-    @include adaptiveValue('padding-top', 115, 20);
-    @include adaptiveValue('padding-bottom', 161, 20);
+    @include adaptiveValue("padding-top", 112, 20);
+    @include adaptiveValue("padding-bottom", 163, 20);
   }
 }
 .result-main {
@@ -15,20 +15,19 @@
   }
   &__title {
     flex: 1 1 auto;
-    @include adaptiveValue('margin-bottom', 40, 20);
+    @include adaptiveValue("margin-bottom", 34, 20);
     font-family: graphik;
-    font-style: normal;
     font-weight: 600;
-    @include adaptiveValue('font-size', 65, 35);
-    line-height: math.div(75, 71);
+    @include adaptiveValue("font-size", 65, 35);
+    line-height: math.div(75, 65);
     letter-spacing: rem(0);
     color: #000000;
-    @include adaptiveValue('padding-left', 240, 1);
-    @include adaptiveValue('padding-right', 240, 1);
+    @include adaptiveValue("padding-left", 240, 1);
+    @include adaptiveValue("padding-right", 240, 1);
   }
   &__text {
     flex: 1 1 auto;
-    @include adaptiveValue('margin-bottom', 57, 20);
+    @include adaptiveValue("margin-bottom", 57, 20);
     font-family: graphik;
     font-weight: 400;
     font-size: rem(20);

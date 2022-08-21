@@ -1,7 +1,7 @@
 .main {
   &__integration {
     @include adaptiveValue("padding-top", 155, 10);
-    @include adaptiveValue("padding-bottom", 158, 10);
+    @include adaptiveValue("padding-bottom", 161, 10);
   }
 }
 .integration-main {
@@ -25,7 +25,7 @@
     @include adaptiveValue("margin-bottom", 5, 25);
   }
   &__text {
-    @include adaptiveValue("margin-bottom", 16, 25);
+    @include adaptiveValue("margin-bottom", 30, 25);
     @include adaptiveValue("padding-left", 330, 1);
     @include adaptiveValue("padding-right", 330, 1);
     font-family: graphik;
@@ -36,7 +36,7 @@
     color: #000000;
   }
   &__img-block {
-    @include adaptiveValue("margin-bottom", 40, 25);
+    @include adaptiveValue("margin-bottom", 32, 25);
     flex: 1 1 auto;
     > img {
       width: 100%;
