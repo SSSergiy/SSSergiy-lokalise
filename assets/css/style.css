@@ -1873,15 +1873,15 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@supports (gap: clamp( 1.25rem , -0.51rem  +  8.8vw , 6.75rem )){
+@supports (gap: clamp( 1.25rem , -0.55rem  +  9vw , 6.875rem )){
   .popular-main__container {
-    gap: clamp( 1.25rem , -0.51rem  +  8.8vw , 6.75rem );
+    gap: clamp( 1.25rem , -0.55rem  +  9vw , 6.875rem );
   }
 }
-@supports not (gap: clamp( 1.25rem , -0.51rem  +  8.8vw , 6.75rem )){
+@supports not (gap: clamp( 1.25rem , -0.55rem  +  9vw , 6.875rem )){
   .popular-main__container {
     gap: calc(
-    1.25rem + 5.5 * (100vw - 20rem) / 62.5
+    1.25rem + 5.625 * (100vw - 20rem) / 62.5
     );
   }
 }
@@ -1950,15 +1950,15 @@ body {
 
   border-left: 1px solid #000000;
 }
-@supports (gap: clamp( 1.875rem , 1.475rem  +  2vw , 3.125rem )){
+@supports (gap: clamp( 1.875rem , 1.075rem  +  4vw , 4.375rem )){
   .popular-main__partners-items {
-    gap: clamp( 1.875rem , 1.475rem  +  2vw , 3.125rem );
+    gap: clamp( 1.875rem , 1.075rem  +  4vw , 4.375rem );
   }
 }
-@supports not (gap: clamp( 1.875rem , 1.475rem  +  2vw , 3.125rem )){
+@supports not (gap: clamp( 1.875rem , 1.075rem  +  4vw , 4.375rem )){
   .popular-main__partners-items {
     gap: calc(
-    1.875rem + 1.25 * (100vw - 20rem) / 62.5
+    1.875rem + 2.5 * (100vw - 20rem) / 62.5
     );
   }
 }

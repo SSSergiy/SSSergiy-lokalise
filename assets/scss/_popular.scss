@@ -12,7 +12,7 @@
     @media (max-width: rem(959)) {
       @include adaptiveValue("gap", 90, 20);
     }
-    @include adaptiveValue("gap", 108, 20);
+    @include adaptiveValue("gap", 110, 20);
   }
   &__description {
     flex: 1 1 44%;
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include adaptiveValue("gap", 50, 30);
+    @include adaptiveValue("gap", 70, 30);
     border-left: 1px solid #000000;
     @media (max-width: 959px) {
       border-left: 1px solid #00000000;
