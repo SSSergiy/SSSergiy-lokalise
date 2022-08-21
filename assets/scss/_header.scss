@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid #cccccc;
-  @include adaptiveValue("padding-top", 24, 10);
-  @include adaptiveValue("padding-bottom", 23, 10);
+  @include adaptiveValue("padding-top", 26, 10);
+  @include adaptiveValue("padding-bottom", 26, 10);
   &__container {
   }
 }

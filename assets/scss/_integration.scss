@@ -1,7 +1,7 @@
 .main {
   &__integration {
     @include adaptiveValue("padding-top", 155, 10);
-    @include adaptiveValue("padding-bottom", 161, 10);
+    @include adaptiveValue("padding-bottom", 165, 10);
   }
 }
 .integration-main {
@@ -36,7 +36,7 @@
     color: #000000;
   }
   &__img-block {
-    @include adaptiveValue("margin-bottom", 32, 25);
+    @include adaptiveValue("margin-bottom", 35, 25);
     flex: 1 1 auto;
     > img {
       width: 100%;

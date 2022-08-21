@@ -1,7 +1,7 @@
 .main {
   &__description {
     @include adaptiveValue("padding-top", 118, 20);
-    @include adaptiveValue("padding-bottom", 169, 20);
+    @include adaptiveValue("padding-bottom", 174, 20);
   }
 }
 .description-main {
