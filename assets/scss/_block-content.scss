@@ -1,12 +1,12 @@
 .main {
   &__block {
-    @include adaptiveValue("padding-top", 84, 0);
+    @include adaptiveValue("padding-top", 92, 0);
     @include adaptiveValue("padding-left", 23, 1);
     @include adaptiveValue("padding-right", 24, 1);
-    @include adaptiveValue("margin-bottom", 165, 0);
+    @include adaptiveValue("margin-bottom", 158, 0);
     .underline {
-    text-decoration: underline;
-    cursor: pointer;
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }
@@ -32,14 +32,14 @@
       @media (max-width: rem(805)) {
         order: -1;
       }
-      @include adaptiveValue("padding-left", 110, 1);
-      @include adaptiveValue("padding-right", 30, 1);
+      @include adaptiveValue("padding-left", 115, 1);
+      @include adaptiveValue("padding-right", 50, 1);
+      @include adaptiveValue("padding-top", 10, 1);
     }
     display: flex;
-    @include adaptiveValue("gap", 30, 10);
+    @include adaptiveValue("gap", 37, 10);
     flex-direction: column;
     flex: 1 1 50%;
-    margin: rem(-17) rem(0) rem(0) rem(0);
     @media (max-width: rem(805)) {
       margin: rem(0) rem(0) rem(0) rem(0);
       @include adaptiveValue("padding-top", 40, 15);
@@ -47,7 +47,7 @@
     }
   }
   &__title {
-    @include adaptiveValue("padding-top", 20, 1);
+    @include adaptiveValue("padding-top", 1, 1);
     font-family: graphik;
     font-weight: 600;
     max-width: rem(493);

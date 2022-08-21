@@ -12,7 +12,7 @@
     @media (max-width: rem(959)) {
       @include adaptiveValue("gap", 90, 20);
     }
-    @include adaptiveValue("gap", 115, 20);
+    @include adaptiveValue("gap", 108, 20);
   }
   &__description {
     flex: 1 1 44%;
@@ -42,7 +42,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include adaptiveValue("padding-top", 10, 0);
     @include adaptiveValue("gap", 50, 30);
     border-left: 1px solid #000000;
     @media (max-width: 959px) {
@@ -54,9 +53,10 @@
     }
   }
   &__partners-item {
+    @include adaptiveValue("padding-top", 10, 5);
   }
   &__partners-item-logo {
-    @include adaptiveValue("margin-bottom", 10, 5);
+    @include adaptiveValue("margin-bottom", 20, 5);
   }
   &__partners-item-favorite {
     @include adaptiveValue("margin-bottom", 10, 5);

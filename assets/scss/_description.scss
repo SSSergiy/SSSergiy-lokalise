@@ -1,7 +1,7 @@
 .main {
   &__description {
     @include adaptiveValue("padding-top", 118, 20);
-    @include adaptiveValue("padding-bottom", 166, 20);
+    @include adaptiveValue("padding-bottom", 169, 20);
   }
 }
 .description-main {
@@ -19,7 +19,7 @@
   &__products {
     display: flex;
     flex-direction: column;
-    @include adaptiveValue("gap", 55, 10);
+    @include adaptiveValue("gap", 57, 10);
     flex: 1 1 42%;
     @media (max-width: rem(907)) {
       order: 2;
